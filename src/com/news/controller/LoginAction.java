@@ -33,9 +33,9 @@ public class LoginAction {
 			//由getAllTopic觉定处理完之后，到哪个页面
 			return "forward:/allTopic"; 
 		}else{
-			//如果没有得到请求参数，也就是登录失败后，转发到IndexFilter拦截器
-			//由拦截器处理到哪个
-			return "forward:/IndexFilter";
+			//如果没有得到请求参数，也就是登录失败后，转发到LoginFilter过滤器
+			//由过滤器处理到哪个页面
+			return "forward:/LoginFilter";
 		}
 		
 	}
